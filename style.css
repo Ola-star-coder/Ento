@@ -1,0 +1,100 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.4s ease, background 0.3s ease;
+}
+
+.header.scrolled {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    background: #fff;
+}
+
+.header .logo {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Caprasimo", serif;
+    letter-spacing: 2px;
+}
+
+.hamburger {
+    font-size: 32px;
+    background: none;
+    cursor: pointer;
+    border: none;
+    color: #000;
+    transition: color 0.3s;
+}
+
+.hamburger:hover {
+    color: #765251;
+    transition: 0.3s ease;
+}
+
+.nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 24px;
+    background: #fff;
+    border-radius: 12px;
+    min-width: 180px;
+    padding: 1rem 0.5rem;
+    z-index: 100;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    padding: 0.5rem 0.5rem;
+}
+
+.nav ul li a {
+    display: block;
+    padding: 0.75 1.5rem;
+    font-size: 18px;
+    color: #000;
+    border-radius: 8px;
+    transition: .3s ease;
+}
+
+.nav ul li a:hover {
+    color: #765252;
+    transition: 0.3s ease;
+}
+
+.nav.active {
+    display: flex;
+}
