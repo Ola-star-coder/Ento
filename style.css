@@ -35,7 +35,7 @@ span {
     text-transform: uppercase;
 }
 
-#rewriter {
+.rewriter {
     background: linear-gradient(90deg, #ED3500 40%, #FFD8D8 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -43,7 +43,7 @@ span {
     transition: background 0.4s;
 }
 
-#rewriter::after {
+.rewriter::after {
     content: '|';
     animation: cursor 1s steps(1) infinite;
     margin-left: 2px;
