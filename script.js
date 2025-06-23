@@ -31,7 +31,42 @@ setInterval(nextSlide, 3000);
 
 showSlide(currentSlide);
 
+// Rewriting Effects
+const texts = ['CloudNai', 'Prof. Ai', 'Copilot', 'Pro Ai'];
+const textSpan = document.getElementById('rewriter');
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let typingSpeed = 180;
+let pauseTime = 2500;
 
+function typeText(){
+    const currentText = texts[textIndex];
+    if(isDeleting){
+        textSpan.textContent = currentText.substring(0, charIndex--);
+        if(charIndex < 0){
+            isDeleting = false;
+            textIndex = (textIndex + 1) % texts.length; 
+            setTimeout(typeText, 400);
+        }else{
+            setTimeout(typeText, typingSpeed / 1);
+        }
+         }else{
+         textSpan.textContent = currentText.substring(0, charIndex++);
+         if(charIndex > currentText.length){
+            isDeleting = true
+            setTimeout(typeText, pauseTime);
+         }else{
+            setTimeout(typeText, typingSpeed)
+         }
+         }
+    }
+
+    if(textSpan) typeText();
+
+
+// Theme Toggle Functionality
+// Icons for theme toggle
 const sunIcon = `<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>`;
 const moonIcon = `<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/></svg>`;
 

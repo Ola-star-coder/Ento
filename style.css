@@ -15,7 +15,6 @@ body::-webkit-scrollbar {
 }
 
 html {
-    scrollbar-width: none;
     scroll-behavior: smooth;
 }
 
@@ -31,6 +30,37 @@ img {
     width: 100%;
 }
 
+span {
+    font-family: "Caprasimo", serif;
+    text-transform: uppercase;
+}
+
+#rewriter {
+    background: linear-gradient(90deg, #ED3500 40%, #FFD8D8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: background 0.4s;
+}
+
+#rewriter::after {
+    content: '|';
+    animation: cursor 1s steps(1) infinite;
+    margin-left: 2px;
+}
+
+@keyframes cursor {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
 :root {
     --primary-color: #fff;
     --secondary-color: #765251;
@@ -39,6 +69,7 @@ img {
     --header-bg: rgba(255, 255, 255, 0.85);
     --header-bg-scrolled: #fff;
     --temp-color: #c79f9f;
+    --span-text-color: #9B177E;
 }
 
 /* Dark mode begins */
@@ -348,15 +379,55 @@ body.dark-mode .slide.active {
     transition: .3s ease;
 }
 
-/* .product-slider::-webkit-scrollbar {
-    height: 8px;
+/* CloudNAi */
+.CloudNAi {
+    padding: 1rem 0rem;
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/CloudNai.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.product-slider::-webkit-scrollbar-thumb {
-    background: #c79f9f;
-    border-radius: 4px;
+.cloudNai-container {
+    padding: 2rem 1rem;
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
 }
 
-.product-slider::-webkit-scrollbar-track {
-    background: #f7f7f7;
-} */
+.cloudNai-container h2 {
+    font-size: 3.3rem;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.cloudNai-container p {
+    font-size: 1rem;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.cloudNai-container button {
+    margin-top: 0.7em;
+    padding: 0.75rem 1.5rem;
+    font-size: 16px;
+    color: var(--text-color);
+    background: var(--background-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    font-weight: 600;
+}
+
+.cloudNai-container button:hover {
+    background: var(--temp-color);
+    color: var(--text-color);
+    box-shadow: 0 4px 16px rgba(255, 213, 128, 0.12);
+    transition: background 0.3s ease, color 0.3s ease;
+}
