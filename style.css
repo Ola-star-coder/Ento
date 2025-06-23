@@ -8,6 +8,14 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: "Poppins", sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scrollbar-width: none;
     scroll-behavior: smooth;
 }
 
