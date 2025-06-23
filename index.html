@@ -16,11 +16,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
    <header class="header">
     <div class="logo">
      <h2>Ento</h2>   
     </div>
-    <button class="hamburger" id="hamburger">&#9776;</button>
+    <!-- <button id="theme-toggle" class="theme-toggle">🌙</button> -->
+    
+    <!-- <button class="hamburger" id="hamburger">&#9776;</button> -->
+    <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode"></button>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+    </div>
    
     <nav class="nav" id="nav-menu">
      <ul>
@@ -32,6 +39,36 @@
     </nav>
    
    </header>
+
+   <!-- Hero Section -->
+    <section class="hero">
+    <div class="hero-slider" id="hero-slider">
+      <div class="slide active" style="background-image: url(images/hero-1.png);">
+        <h1>Ento CyberOne Security</h1>
+        <p>Protecting your digital world with cutting-edge technology.</p>
+        <button type="submit">learn More</button>
+      </div> 
+
+    <div class="slide" style="background-image: url(images/hero-2.jpg);">
+    <h1>Ento CloudOne</h1>
+    <p>Seamlessly integrating cloud solutions for your business, over 7m enterprises trust us.</p>
+    <button type="submit">learn More</button>
+    </div>
+
+    <div class="slide" style="background-image: url(images/hero-3.jpg);">
+    <h1>Ento CloudNai</h1>
+    <p>Turning professional Ai into soverign solutions with cyberSecurity and cloud</p>
+    <button type="submit">learn More</button>
+    </div>
+
+    <div class="slide" style="background-image: url(images/hero-4.jpg);">
+    <h1>Ento Suite</h1>
+    <p>All-in-one solution for your cybersecurity, cloud, and AI needs.</p>
+    <button type="submit">Coming Soon</button>
+    </div>
+    </div>
+
+    </section>
     
     <script src="script.js"></script>
 </body>
