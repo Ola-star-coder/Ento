@@ -12,6 +12,7 @@ window.addEventListener('scroll', function(){
 
 });
 
+// Hero slider
 let currentSlide = 0;
 const slides = document.querySelectorAll('.hero-slider .slide');
 const totalSlides = slides.length;
@@ -27,7 +28,7 @@ function nextSlide(){
     showSlide(currentSlide);
 }
 
-setInterval(nextSlide, 3000);
+setInterval(nextSlide, 7000);
 
 showSlide(currentSlide);
 
@@ -83,3 +84,27 @@ themeToggle.addEventListener('click', function(){
 updateTheme();
 
 
+const testimonialCards = document.querySelectorAll('.testimonial-card');
+const testimonialPrev = document.getElementById('testimonial-prev');
+const testimonialNext = document.getElementById('testimonial-next');
+let testimonialIndex = 0;
+
+function showTestimonial(index){
+  testimonialCards.forEach((card, i) =>{
+    card.classList.toggle('active', i === index);
+    card.setAttribute('aria-hidden', i !== index);
+    if (i === index){
+        card.focus();
+    }
+  })
+}
+
+testimonialPrev?.addEventListener('click', () => {
+    testimonialIndex = (testimonialIndex - 1 + testimonialCards.length) % testimonialCards.length;
+    showTestimonial(testimonialIndex);
+})
+
+testimonialNext?.addEventListener('click', () =>{
+    testimonialIndex = (testimonialIndex + 1) % testimonialCards.length;
+    showTestimonial(testimonialIndex);
+})
