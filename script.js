@@ -85,26 +85,25 @@ updateTheme();
 
 
 const testimonialCards = document.querySelectorAll('.testimonial-card');
-const testimonialPrev = document.getElementById('testimonial-prev');
-const testimonialNext = document.getElementById('testimonial-next');
+const testimonialPagination = document.getElementById('testimonial-pagination');
 let testimonialIndex = 0;
 
+testimonialCards.forEach((_, i) =>{
+    const dot = document.createElement('div');
+    dot.className = 'testimonial-dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', `Show testimonial ${i + 7}`);
+    dot.addEventListener('click', () => {
+        showTestimonial(i);
+    });
+    testimonialPagination.appendChild(dot);
+})
+
 function showTestimonial(index){
-  testimonialCards.forEach((card, i) =>{
+  testimonialCards.forEach((card, i) => {
     card.classList.toggle('active', i === index);
-    card.setAttribute('aria-hidden', i !== index);
-    if (i === index){
-        card.focus();
-    }
   })
+  document.querySelectorAll('.testimonial-dot').forEach((dot, i) => {
+    dot.classList.toggle('active', i === index);
+  });
+  testimonialIndex = index;
 }
-
-testimonialPrev?.addEventListener('click', () => {
-    testimonialIndex = (testimonialIndex - 1 + testimonialCards.length) % testimonialCards.length;
-    showTestimonial(testimonialIndex);
-})
-
-testimonialNext?.addEventListener('click', () =>{
-    testimonialIndex = (testimonialIndex + 1) % testimonialCards.length;
-    showTestimonial(testimonialIndex);
-})

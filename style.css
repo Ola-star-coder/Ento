@@ -458,28 +458,42 @@ body.dark-mode .slide.active {
 }
 
 .testimonial-card {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    background: var(--header-bg);
-    border-radius: 14px;
+    position: relative;
+    width: 100%;
+    max-width: 370px;
+    min-height: 220px;
+    border-radius: 15px;
+    overflow: hidden;
     box-shadow: 0 4px 24px rgba(70, 28, 28, 0.10);
-    padding: 1.5rem 1.2rem;
-    color: var(--text-color);
-    min-height: 180px;
-    transition: opacity 0.5s;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    margin: 0 auto;
+    display: none;
 }
 
 .testimonial-card.active {
-    display: flex;
-    opacity: 1;
-    position: relative;
+    display: block;
+}
+
+.testimonial-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     z-index: 1;
+    filter: brightness(0.5) blur(1px);
+}
+
+.testimonial-content {
+    position: relative;
+    z-index: 2;
+    color: var(--primary-color);
+    padding: 2rem 1.1rem 1.5rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    justify-content: flex-end;
 }
 
 .testimonial-writer {
@@ -496,25 +510,25 @@ body.dark-mode .slide.active {
     object-fit: cover;
 }
 
-.testimonial-controls {
-    margin-top: 1.2rem;
+.testimonial-pagination {
     display: flex;
-    gap: 1.2rem
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5em;
 }
 
-.testimonial-controls button {
-    background: var(--temp-color);
-    color: var(--text-color);
-    border: none;
-    border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
-    font-size: 1.3rem;
-    transition: background 0.4s;
+.testimonial-dot {
+    width: 32px;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--secondary-color);
+    opacity: 0.5;
+    transition: background 0.3s, opacity 0.3s;
     cursor: pointer;
 }
 
-.testimonial-controls button:focus {
-    outline: 2px solid #765251;
-    outline-offset: 2px;
+.testimonial-dot.active {
+    background: #f33f0e;
+    opacity: 1;
 }
