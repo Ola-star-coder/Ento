@@ -442,27 +442,38 @@ body.dark-mode .slide.active {
 /* Testimonial */
 .testimonial {
     width: 100%;
-    padding: 2rem 0;
+    padding: 2rem 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: var(--background-color);
 }
 
-.testimonial .slider {
-    width: 100%;
-    max-width: 370px;
-    min-height: 220px;
+.testimonial-slider {
     position: relative;
+    width: 100%;
     margin: 0 auto;
+}
+
+.testimonial-pagination {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    z-index: 1;
+    pointer-events: auto;
 }
 
 .testimonial-card {
     position: relative;
     width: 100%;
-    max-width: 370px;
-    min-height: 220px;
-    border-radius: 15px;
+    max-width: 420px;
+    min-height: 510px;
+    border-radius: 24px;
     overflow: hidden;
     box-shadow: 0 4px 24px rgba(70, 28, 28, 0.10);
     margin: 0 auto;
@@ -488,7 +499,7 @@ body.dark-mode .slide.active {
     position: relative;
     z-index: 2;
     color: var(--primary-color);
-    padding: 2rem 1.1rem 1.5rem 1.1rem;
+    padding: 2.5rem 1.5rem 4.5rem 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -504,31 +515,24 @@ body.dark-mode .slide.active {
 }
 
 .testimonial-writer img {
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.testimonial-pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1.5em;
-}
 
 .testimonial-dot {
-    width: 32px;
-    height: 4px;
-    border-radius: 2px;
-    background: var(--secondary-color);
+    width: 62px;
+    height: 6px;
+    border-radius: 3px;
+    background: var(--primary-color);
     opacity: 0.5;
     transition: background 0.3s, opacity 0.3s;
     cursor: pointer;
 }
 
 .testimonial-dot.active {
-    background: #f33f0e;
+    background: var(--temp-color);
     opacity: 1;
 }
