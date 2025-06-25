@@ -91,7 +91,7 @@ let testimonialIndex = 0;
 testimonialCards.forEach((_, i) =>{
     const dot = document.createElement('div');
     dot.className = 'testimonial-dot' + (i === 0 ? ' active' : '');
-    dot.setAttribute('aria-label', `Show testimonial ${i + 7}`);
+    dot.setAttribute('aria-label', `Show testimonial ${i + 1}`);
     dot.addEventListener('click', () => {
         showTestimonial(i);
     });
