@@ -107,3 +107,19 @@ function showTestimonial(index){
   });
   testimonialIndex = index;
 }
+
+document.querySelectorAll('.tab').forEach(tab => {
+    tab.addEventListener('click', function() {
+      // Remove active from all tabs and contents
+      document.querySelectorAll('.tab').forEach(t => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+  
+      // Activate clicked tab and corresponding content
+      this.classList.add('active');
+      this.setAttribute('aria-selected', 'true');
+      document.getElementById(this.dataset.tab).classList.add('active');
+    });
+  });
