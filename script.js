@@ -83,7 +83,7 @@ themeToggle.addEventListener('click', function(){
 
 updateTheme();
 
-
+// Testimonial
 const testimonialCards = document.querySelectorAll('.testimonial-card');
 const testimonialPagination = document.getElementById('testimonial-pagination');
 let testimonialIndex = 0;
@@ -108,18 +108,38 @@ function showTestimonial(index){
   testimonialIndex = index;
 }
 
-document.querySelectorAll('.tab').forEach(tab => {
-    tab.addEventListener('click', function() {
-      // Remove active from all tabs and contents
-      document.querySelectorAll('.tab').forEach(t => {
-        t.classList.remove('active');
-        t.setAttribute('aria-selected', 'false');
-      });
-      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-  
-      // Activate clicked tab and corresponding content
-      this.classList.add('active');
-      this.setAttribute('aria-selected', 'true');
-      document.getElementById(this.dataset.tab).classList.add('active');
+// Features
+const featureCards = document.querySelectorAll('.feature-card');
+const featureDotsBox = document.querySelector('.feature-dots');
+const prevBtn = document.querySelector('.feature-prev');
+const nextBtn = document.querySelector('.feature-next');
+let featureIndex = 0;
+
+featureCards.forEach((_, i) =>{
+    const dot = document.createElement('button');
+    dot.className = 'feature-dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', `Show feature ${i + 1}`);
+    dot.addEventListener('click', () => showFeature(i));
+    featureDotsBox.appendChild(dot);
+})
+
+function showFeature(index){
+    featureCards.forEach((card, i) =>{
+        card.classList.toggle('active', i === index);
     });
-  });
+
+    document.querySelectorAll('.feature-dot').forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+    })
+    featureIndex = index;
+}
+
+prevBtn.addEventListener('click', () =>{
+   featureIndex = (featureIndex - 1 + featureCards.length) % featureCards.length;
+   showFeature(featureIndex);
+})
+
+nextBtn.addEventListener('click', () =>{
+    featureIndex = (featureIndex + 1) % featureCards.length;
+    showFeature(featureIndex);
+})
