@@ -613,3 +613,158 @@ body.dark-mode .slide.active {
     box-shadow: 0 4px 16px rgba(255, 213, 128, 0.12);
     transition: background 0.3s ease, color 0.3s ease;
 }
+
+/* Feature */
+.feature {
+    padding: 1rem 0;
+    color: var(--text-color);
+}
+
+.feature-head {
+    text-align: center;
+    padding: 1.2rem 0.6rem;
+    font-weight: 500;
+}
+
+.feature-head h2 {
+    font-size: 1.5rem;
+    font-family: "Caprasimo", serif;
+    text-transform: uppercase;
+}
+
+.feature-head p {
+    padding-top: 0.3rem;
+    font-size: 15px;
+}
+
+.feature-container {
+    padding: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.feature-card {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.5s;
+}
+
+.feature-card.active {
+    display: flex;
+}
+
+.feature-img {
+    width: 100%;
+    margin: 0 auto 1.5rem auto;
+    border-radius: 30px;
+}
+
+.feature-text {
+    background: none;
+    padding: 0;
+}
+
+.feature-text h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.feature-text p {
+    font-size: 15px;
+}
+
+.feature-text button {
+    margin-top: 0.7rem;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    background: none;
+    color: var(--text-color);
+}
+
+.feature-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3em;
+    background: none;
+    color: var(--text-color);
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    transition: color 0.2s;
+}
+
+.feature-link:hover {
+    color: #ED3500;
+}
+
+.feature-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.feature-dots {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 1em;
+}
+
+.feature-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--text-color);
+    opacity: 0.6;
+    transition: opacity 0.3s, background 0.2s;
+    cursor: pointer;
+    border: none;
+}
+
+.feature-dot.active {
+    background: var(--text-color);
+    opacity: 1;
+}
+
+.feature-arrows {
+    display: flex;
+    gap: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.feature-arrows button {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    background: transparent;
+}
+
+.feature-arrows button:hover {
+    background: var(--temp-color);
+    color: var(--text-color);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
