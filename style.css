@@ -81,7 +81,7 @@ body.dark-mode {
     --background-color: #181a1b;
     --header-bg: rgba(24, 26, 27, 0.92);
     --header-bg-scrolled: #23272a;
-    --text-color: #c9c7c7;
+    --text-color: #dddcdc;
 }
 
 .theme-toggle {
