@@ -143,3 +143,24 @@ nextBtn.addEventListener('click', () =>{
     featureIndex = (featureIndex + 1) % featureCards.length;
     showFeature(featureIndex);
 })
+
+const video = document.getElementById('connectVid');
+const toggleVid = document.getElementById('videoToggle');
+
+function updateButton(){
+    toggleVid.textContent = video.paused ? '▶' : '⏸';
+    toggleVid.setAttribute('aria-label', video.paused ? 'Play video' : 'Paused video');
+}
+
+toggleVid.addEventListener('click', function(){
+    if(video.paused){
+        video.play()
+    } else{
+        video.pause()
+    }
+    updateButton();
+});
+
+video.addEventListener('play', updateButton);
+video.addEventListener('pause', updateButton);
+updateButton()
