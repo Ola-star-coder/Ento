@@ -51,6 +51,15 @@ span {
     margin-left: 2px;
 }
 
+.connectVid {
+    pointer-events: none;
+}
+
+.connectVid::-webkit-media-controls {
+    display: none !important;
+    opacity: 0 !important;
+}
+
 @keyframes cursor {
 
     0%,
@@ -823,14 +832,19 @@ body.dark-mode .slide.active {
     font-weight: 600;
 }
 
+.get-help {
+    text-align: center;
+}
+
 .classybtn {
     margin-top: 0.7rem;
     cursor: pointer;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 17px;
+    font-weight: 600;
     outline: none;
     background: transparent;
     color: var(--text-color);
+    text-align: center;
 }
 
 .connect-video {
@@ -879,15 +893,6 @@ body.dark-mode .slide.active {
     transition: background 0.2s;
     pointer-events: auto;
 }
-
-/* #connectVid {
-    pointer-events: none;
-}
-
-#connectVid::-webkit-media-controls {
-    display: none !important;
-    opacity: 0 !important;
-} */
 
 .video-toggle:hover {
     background: var(--text-color);
