@@ -616,6 +616,7 @@ body.dark-mode .slide.active {
 /* Feature */
 .feature {
     padding: 1rem 0;
+    padding-top: 3rem;
     color: var(--text-color);
 }
 
@@ -1010,4 +1011,50 @@ body.dark-mode .slide.active {
 .career-text button:hover {
     background: #1B56FD;
     transition: 0.3s;
+}
+
+.leadership {
+    padding-top: 1rem;
+}
+
+.leadership-box {
+    padding: 0rem 1rem;
+}
+
+.leadership-text {
+    padding-right: 2rem;
+}
+
+.leadership-text h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.leadership-text p {
+    padding-top: 0.6rem;
+    font-size: 18px;
+}
+
+.leadership-text button {
+    margin-top: 0.8rem;
+    margin-bottom: 2.5rem;
+    padding: 14px 18px;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: #093FB4;
+    color: #fff;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.leadership-text button:hover {
+    background: var(--text-color);
+    color: var(--background-color);
+    transition: 0.3s;
+}
+
+.leadership-box img {
+    border-radius: 30px;
 }
