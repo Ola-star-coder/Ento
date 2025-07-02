@@ -51,15 +51,6 @@ span {
     margin-left: 2px;
 }
 
-#connectVid {
-    pointer-events: none;
-}
-
-#connectVid::-webkit-media-controls {
-    display: none !important;
-    opacity: 0 !important;
-}
-
 @keyframes cursor {
 
     0%,
@@ -73,7 +64,7 @@ span {
 }
 
 :root {
-    --primary-color: #bc4848;
+    --primary-color: #c9c7c7;
     --secondary-color: #765251;
     --text-color: #323232;
     --background-color: #f7f7f7;
@@ -85,7 +76,7 @@ span {
 
 /* Dark mode begins */
 body.dark-mode {
-    --primary-color: #fff;
+    --primary-color: #c9c7c7;
     --secondary-color: #fff2b2;
     --background-color: #181a1b;
     --header-bg: rgba(24, 26, 27, 0.92);
@@ -891,6 +882,15 @@ body.dark-mode .slide.active {
     z-index: 1;
     transition: background 0.2s;
     pointer-events: auto;
+}
+
+#connectVid {
+    pointer-events: none;
+}
+
+#connectVid::-webkit-media-controls {
+    display: none !important;
+    opacity: 0 !important;
 }
 
 .video-toggle:hover {
