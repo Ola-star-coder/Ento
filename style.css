@@ -875,6 +875,16 @@ body.dark-mode .slide.active {
     justify-content: center;
     z-index: 1;
     transition: background 0.2s;
+    pointer-events: auto;
+}
+
+#connectVid {
+    pointer-events: none;
+}
+
+#connectVid::-webkit-media-controls {
+    display: none !important;
+    opacity: 0 !important;
 }
 
 .video-toggle:hover {
