@@ -919,9 +919,6 @@ body.dark-mode .slide.active {
     transition: 0.3s ease;
 }
 
-.news-slider {
-    position: relative;
-}
 
 .news-container {
     display: flex;
@@ -942,13 +939,14 @@ body.dark-mode .slide.active {
 }
 
 .news-card img {
-    width: 340px;
-    height: 50%;
+    width: 280px;
+    height: 40%;
     border-radius: 20px;
 }
 
 .news-text h3 {
     padding-top: 1rem;
+    font-size: 19px;
 }
 
 .news-card button {
@@ -960,18 +958,4 @@ body.dark-mode .slide.active {
     background: transparent;
     color: var(--text-color);
     text-align: center;
-}
-
-.news-indicator {
-    position: absolute;
-    top: -0.4rem;
-    right: 2.2rem;
-    color: var(--text-color);
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 0.2em 0.8em;
-    border-radius: 12px;
-    z-index: 2;
-    margin-bottom: 0;
-    float: none;
 }
