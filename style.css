@@ -794,7 +794,7 @@ body.dark-mode .slide.active {
 
 /* Connect */
 .connect {
-    padding: 1rem 0;
+    padding-top: 3.5rem;
     color: var(--text-color);
 }
 
@@ -893,7 +893,7 @@ body.dark-mode .slide.active {
 
 /* NewsRoom */
 .newsroom {
-    padding-top: 3rem;
+    padding-top: 5.3rem;
 }
 
 .news-head {
@@ -964,7 +964,7 @@ body.dark-mode .slide.active {
 }
 
 .career {
-    padding-top: 2rem;
+    padding-top: 4.7rem;
 }
 
 .career-container {
