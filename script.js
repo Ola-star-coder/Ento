@@ -148,7 +148,7 @@ const video = document.getElementById('connectVid');
 const toggleVid = document.getElementById('videoToggle');
 
 function updateButton(){
-    toggleVid.textContent = video.paused ? '▶' : '⏸';
+    toggleVid.textContent = video.paused ? '▶' : 'II';
     toggleVid.setAttribute('aria-label', video.paused ? 'Play video' : 'Paused video');
 }
 
