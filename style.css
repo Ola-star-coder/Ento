@@ -935,18 +935,18 @@ body.dark-mode .slide.active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    scroll-snap-align: start;
+    /* align-items: normal; */
 }
 
 .news-card img {
-    width: 280px;
-    height: 40%;
+    width: 285px;
+    height: 47%;
     border-radius: 20px;
 }
 
 .news-text h3 {
     padding-top: 1rem;
-    font-size: 19px;
+    font-size: 17px;
 }
 
 .news-card button {
@@ -958,4 +958,53 @@ body.dark-mode .slide.active {
     background: transparent;
     color: var(--text-color);
     text-align: center;
+}
+
+.career {
+    padding: 1rem 0;
+}
+
+.career-container {
+    padding: 0rem 1rem;
+}
+
+.career-box {
+    background: #273F4F;
+    border-radius: 30px;
+    color: #fff;
+}
+
+.career-box img {
+    border-radius: 30px 30px 0 0;
+}
+
+.career-text {
+    padding: 1rem;
+}
+
+.career-text h3 {
+    font-size: 16px;
+}
+
+.career-text p {
+    font-weight: 600;
+}
+
+.career-text button {
+    margin: 1rem 0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #093FB4;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.career-text button:hover {
+    background: #1B56FD;
+    transition: 0.3s;
 }
