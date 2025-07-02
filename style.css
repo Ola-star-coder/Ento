@@ -882,6 +882,7 @@ body.dark-mode .slide.active {
     z-index: 1;
     transition: background 0.2s;
     pointer-events: auto;
+    outline: none;
 }
 
 #connectVid {
