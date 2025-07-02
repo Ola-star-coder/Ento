@@ -51,11 +51,11 @@ span {
     margin-left: 2px;
 }
 
-.connectVid {
+#connectVid {
     pointer-events: none;
 }
 
-.connectVid::-webkit-media-controls {
+#connectVid::-webkit-media-controls {
     display: none !important;
     opacity: 0 !important;
 }
