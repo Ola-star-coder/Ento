@@ -984,10 +984,13 @@ body.dark-mode .slide.active {
 
 .career-text {
     padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .career-text h3 {
     font-size: 16px;
+    font-weight: 500;
 }
 
 .career-text p {
