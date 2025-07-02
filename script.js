@@ -164,3 +164,27 @@ toggleVid.addEventListener('click', function(){
 video.addEventListener('play', updateButton);
 video.addEventListener('pause', updateButton);
 updateButton()
+
+const newsContainer = document.querySelector('.news-container');
+const newsCards = document.querySelectorAll('.news-card');
+const newsIndicator = document.getElementById('newsIndicator');
+
+function updateNewsIndicator() {
+    let closestIdx = 0;
+    let closestOffset = Infinity;
+    newsCards.forEach((card, idx) => {
+        const rect = card.getBoundingClientRect();
+        const offset = Math.abs(rect.left - newsContainer.getBoundingClientRect().left);
+        if (offset < closestOffset) {
+            closestOffset = offset;
+            closestIdx = idx;
+        }
+    });
+    newsIndicator.textContent = `${closestIdx + 1}/${newsCards.length}`;
+}
+
+if (newsContainer && newsCards.length > 0 && newsIndicator) {
+    newsContainer.addEventListener('scroll', updateNewsIndicator);
+    window.addEventListener('resize', updateNewsIndicator);
+    updateNewsIndicator();
+}
