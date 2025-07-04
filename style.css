@@ -1133,10 +1133,11 @@ body.dark-mode .slide.active {
     align-items: center;
 }
 
-.footer-box-toggle .chevron {
+.footer-box-toggle i {
     margin-left: 1rem;
     transition: transform 0.3s;
-    font-size: 1.3rem;
+    font-size: 0.6rem;
+    font-weight: 700;
 }
 
 .footer-box-list {
