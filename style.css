@@ -1159,6 +1159,7 @@ body.dark-mode .slide.active {
 }
 
 .footer-box-list li {
+    margin-top: 1rem;
     margin-bottom: 0.7rem;
 }
 
