@@ -1127,7 +1127,8 @@ body.dark-mode .slide.active {
     text-align: left;
     padding-top: 0.7rem;
     padding-bottom: 0.3rem;
-    /* padding: 0.5rem 0; */
+    padding-left: 0rem;
+    padding-right: 0rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
