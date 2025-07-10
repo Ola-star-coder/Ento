@@ -179,7 +179,7 @@ body.dark-mode .slide.active {
 }
 
 .nav {
-    display: none;
+    display: flex;
     flex-direction: column;
     position: absolute;
     top: 70px;
@@ -190,7 +190,10 @@ body.dark-mode .slide.active {
     padding: 1rem 0.5rem;
     z-index: 100;
     box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-30px) scale(0.98);
+    transition: opacity 0.35s cubic-bezier(.4, 0, .2, 1), transform 0.35s cubic-bezier(.4, 0, .2, 1);
 }
 
 .nav ul {
@@ -217,7 +220,9 @@ body.dark-mode .slide.active {
 }
 
 .nav.active {
-    display: flex;
+    /* display: flex; */
+    opacity: 1;
+    transform: translateY(0) scale(1);
 }
 
 .header-actions {
@@ -584,6 +589,7 @@ body.dark-mode .slide.active {
     transition: background 0.4s;
     display: inline-block;
     min-width: 8ch;
+    text-align: left;
 }
 
 .Research-container p {
@@ -1191,6 +1197,7 @@ body.dark-mode .slide.active {
     opacity: 1;
 }
 
+/* Footer */
 @media screen and (min-width: 900px) {
     .footer-container {
         display: grid;
@@ -1223,5 +1230,12 @@ body.dark-mode .slide.active {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+}
+
+@media screen and (min-width:1044px) {
+    .product-slider {
+        display: flex;
+        justify-content: center;
     }
 }
