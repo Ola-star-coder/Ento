@@ -1013,13 +1013,14 @@ body.dark-mode .slide.active {
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
-    background: #093FB4;
-    color: #fff;
+    background: var(--temp-color);
+    color: #000;
     transition: 0.3s;
 }
 
 .career-text button:hover {
-    background: #1B56FD;
+    background: var(--text-color);
+    color: var(--background-color);
     transition: 0.3s;
 }
 
@@ -1053,8 +1054,8 @@ body.dark-mode .slide.active {
     cursor: pointer;
     border: none;
     outline: none;
-    background: #093FB4;
-    color: #fff;
+    background: var(--secondary-color);
+    color: var(--background-color);
     border-radius: 30px;
     transition: 0.3s;
 }
@@ -1363,6 +1364,7 @@ body.dark-mode .slide.active {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        max-width: 600px;
     }
 
     .career-text h3 {
@@ -1372,17 +1374,6 @@ body.dark-mode .slide.active {
     }
 
     .career-text button {
-        margin: 1rem 0;
-        padding: 10px 20px;
-        border-radius: 20px;
-        border: none;
-        outline: none;
-        font-size: 18px;
-        font-weight: 500;
-        cursor: pointer;
-        background: #093FB4;
-        color: #fff;
-        transition: 0.3s;
         width: auto;
         align-self: flex-start;
     }
