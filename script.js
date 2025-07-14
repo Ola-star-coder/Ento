@@ -1,3 +1,5 @@
+// script.js
+// Navigation Bar
 document.getElementById('hamburger').addEventListener('click', function(){
     document.getElementById('nav-menu').classList.toggle('active');
 })
@@ -63,14 +65,13 @@ function typeText(){
          }
     }
 
-    if(textSpan) typeText();
+if(textSpan) typeText();
 
 
 // Theme Toggle Functionality
 // Icons for theme toggle
 const sunIcon = `<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>`;
 const moonIcon = `<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/></svg>`;
-
 function updateTheme(){
     themeToggle.innerHTML = document.body.classList.contains('dark-mode') ? sunIcon : moonIcon;
 }
@@ -144,6 +145,7 @@ nextBtn.addEventListener('click', () =>{
     showFeature(featureIndex);
 })
 
+// Video Player
 const video = document.getElementById('connectVid');
 const toggleVid = document.getElementById('videoToggle');
 
@@ -165,7 +167,7 @@ video.addEventListener('play', updateButton);
 video.addEventListener('pause', updateButton);
 updateButton()
 
-// DropDowns
+//Footer DropDowns
 document.querySelectorAll('.footer-section').forEach((section, idx) => {
     const btn = section.querySelector('.footer-box-toggle');
     const list = section.querySelector('.footer-box-list');
