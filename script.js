@@ -148,13 +148,25 @@ nextBtn.addEventListener('click', () =>{
 // Video Player
 const video = document.getElementById('connectVid');
 const toggleVid = document.getElementById('videoToggle');
+const videoTogg = document.getElementById('videoTogg') 
 
 function updateButton(){
     toggleVid.textContent = video.paused ? '▶' : '⏸';
     toggleVid.setAttribute('aria-label', video.paused ? 'Play video' : 'Paused video');
+    videoTogg.textContent = video.paused ? '▶' : '⏸';
+    videoTogg.setAttribute('aria-label', video.paused ? 'Play video' : 'Paused video');
 }
 
 toggleVid.addEventListener('click', function(){
+    if(video.paused){
+        video.play()
+    } else{
+        video.pause()
+    }
+    updateButton();
+});
+
+videoTogg.addEventListener('click', function(){
     if(video.paused){
         video.play()
     } else{
