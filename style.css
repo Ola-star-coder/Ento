@@ -1542,8 +1542,8 @@ body.dark-mode .slide.active {
     .connect-wrapper {
         position: relative;
         width: 90%;
-        max-width: 1150px;
-        aspect-ratio: 35/16;
+        max-width: 1200px;
+        aspect-ratio: 35/17;
         border-radius: 30px;
         overflow: hidden;
     }
@@ -1551,9 +1551,9 @@ body.dark-mode .slide.active {
     .connect-wrap {
         position: relative;
         width: 90%;
-        max-width: 1150px;
-        aspect-ratio: 35/18;
-        border-radius: 30px;
+        max-width: 1300px;
+        aspect-ratio: 35/16;
+        border-radius: 0px;
         overflow: hidden;
     }
 
