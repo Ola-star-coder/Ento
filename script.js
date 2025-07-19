@@ -145,16 +145,34 @@ nextBtn.addEventListener('click', () =>{
     showFeature(featureIndex);
 })
 
+// First video player
+const firstVideo = document.getElementById('connectVideo');
+const videoToggle = document.getElementById('videoToggler');
+function newButton(){
+    videoToggle.textContent = firstVideo.paused ? '▶' : '⏸';
+    videoToggle.setAttribute('aria-label', firstVideo.paused ? 'Play video' : 'Paused video');
+}
+
+videoToggle.addEventListener('click', function(){
+    if(firstVideo.paused){
+        firstVideo.play();
+    } else{
+        firstVideo.pause();
+    }
+    newButton();
+});
+
+firstVideo.addEventListener('play', newButton);
+firstVideo.addEventListener('pause', newButton);
+newButton();
+
 // Video Player
 const video = document.getElementById('connectVid');
 const toggleVid = document.getElementById('videoToggle');
-const videoTogg = document.getElementById('videoTogg') 
 
 function updateButton(){
     toggleVid.textContent = video.paused ? '▶' : '⏸';
     toggleVid.setAttribute('aria-label', video.paused ? 'Play video' : 'Paused video');
-    videoTogg.textContent = video.paused ? '▶' : '⏸';
-    videoTogg.setAttribute('aria-label', video.paused ? 'Play video' : 'Paused video');
 }
 
 toggleVid.addEventListener('click', function(){
@@ -166,18 +184,9 @@ toggleVid.addEventListener('click', function(){
     updateButton();
 });
 
-videoTogg.addEventListener('click', function(){
-    if(video.paused){
-        video.play()
-    } else{
-        video.pause()
-    }
-    updateButton();
-});
-
 video.addEventListener('play', updateButton);
 video.addEventListener('pause', updateButton);
-updateButton()
+updateButton();
 
 //Footer DropDowns
 document.querySelectorAll('.footer-section').forEach((section, idx) => {
