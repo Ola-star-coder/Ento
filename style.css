@@ -840,7 +840,7 @@ body.dark-mode .slide.active {
     position: relative;
     width: 95vw;
     max-width: 600px;
-    aspect-ratio: 16/16;
+    aspect-ratio: 17/17;
     border-radius: 0px;
     overflow: hidden;
 }
@@ -1336,7 +1336,6 @@ body.dark-mode .slide.active {
     }
 }
 
-
 @media screen and (min-width: 900px) {
 
     .footer-container {
@@ -1409,7 +1408,7 @@ body.dark-mode .slide.active {
         position: relative;
         width: 90%;
         max-width: none;
-        aspect-ratio: 35/15;
+        aspect-ratio: 47/15;
         border-radius: 0px;
         overflow: hidden;
     }
@@ -1531,6 +1530,77 @@ body.dark-mode .slide.active {
         font-weight: 500;
     }
 
+    .feature-container {
+        position: relative;
+        max-width: 1000px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .feature-card {
+        display: none;
+        flex-direction: row;
+        align-items: stretch;
+        border-radius: 30px;
+        transition: transform 0.3s ease;
+        width: 100%;
+        min-height: 400px;
+    }
+
+    .feature-card.active {
+        display: flex;
+    }
+
+    .feature-img {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .feature-text {
+        width: 50%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .feature-text h3 {
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+
+    .feature-text p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .feature-controls {
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    .feature-head {
+        max-width: 1000px;
+        margin: 0 auto 2rem auto;
+        text-align: center;
+    }
+
+    .feature-head h2 {
+        font-size: 2rem;
+    }
+
+    .feature-head p {
+        font-size: 16px;
+        max-width: 850px;
+        margin: 0 auto;
+    }
+
+    .feature-text button {
+        align-self: flex-start;
+        margin-top: 0;
+        padding: 0.4rem 0;
+    }
 }
 
 @media screen and (min-width:1044px) {
@@ -1551,8 +1621,8 @@ body.dark-mode .slide.active {
     .connect-wrap {
         position: relative;
         width: 90%;
-        max-width: 1300px;
-        aspect-ratio: 35/16;
+        max-width: 1200px;
+        aspect-ratio: 47/16;
         border-radius: 0px;
         overflow: hidden;
     }
