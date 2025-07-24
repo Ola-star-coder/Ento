@@ -1,0 +1,49 @@
+.executive {
+    padding-top: 7rem;
+}
+
+.executive-head {
+    padding: 1rem;
+}
+
+.executive-head h2 {
+    font-size: 2rem;
+}
+
+.executive-container {
+    padding: 1rem 1rem;
+}
+
+.executive-box {
+    padding-bottom: 3em;
+}
+
+.executive-box img {
+    border-radius: 30px;
+}
+
+@media screen and (min-width:600px) {
+    .executive-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .executive-container {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3em;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .executive-head {
+        padding: 1rem;
+        text-align: center;
+    }
+}
