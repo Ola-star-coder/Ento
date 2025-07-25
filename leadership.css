@@ -24,31 +24,34 @@
 
 .tab-buttons {
     display: flex;
-    border-bottom: 1px solid #ccc;
+}
+
+.bord {
+    border-top: 1px solid var(--primary-color);
+    padding-bottom: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
 }
 
 .tab-link {
     padding: 10px 15px;
+    font-size: 17px;
     cursor: pointer;
-    background-color: #f1f1f1;
-    border: none;
-    border-bottom: 3px solid transparent;
-    transition: background-color 0.3s, border-color 0.3s;
+    transition: background-color 0.3s;
 }
 
 .tab-link:hover {
-    background-color: #ddd;
+    background-color: var(--secondary-color);
 }
 
 .tab-link.active {
-    background-color: #fff;
-    border-bottom-color: #4CAF50;
+    background-color: var(--temp-color);
 }
 
 .tab-pane {
     display: none;
     padding: 20px;
-    border: 1px solid #ccc;
     border-top: none;
 }
 
@@ -88,5 +91,11 @@
         gap: 3em;
         max-width: 1200px;
         margin: 0 auto;
+    }
+
+    .tab-buttons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
     }
 }
