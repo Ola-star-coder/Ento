@@ -37,17 +37,20 @@
 
 .tab-link {
     padding: 10px 15px;
-    font-size: 17px;
+    background: none;
+    border-bottom: 2px solid var(--primary-color);
+    font-size: 15px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: border-bottom 0.3s;
+    color: var(--text-color);
 }
 
 .tab-link:hover {
-    background-color: var(--secondary-color);
+    border-bottom: 2px solid var(--span-text-color);
 }
 
 .tab-link.active {
-    background-color: var(--temp-color);
+    border-bottom: 2px solid var(--temp-color);
 }
 
 .tab-pane {
@@ -81,6 +84,10 @@
     .tab-buttons {
         display: flex;
         justify-content: center;
+    }
+
+    .tab-link {
+        font-size: 18px;
     }
 }
 
