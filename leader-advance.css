@@ -1,0 +1,128 @@
+.go-back {
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+}
+
+.back-link {
+    padding: 0rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.go-front {
+    padding-top: 2rem;
+}
+
+.front-link {
+    padding: 0rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.leadership-advance {
+    background-color: var(--header-bg-scrolled);
+    color: var(--text-color);
+}
+
+/* .leader-head {
+   
+} */
+
+.leader-text {
+    padding: 2rem 1rem;
+}
+
+.leader-text h2 {
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.leader-image {
+    padding-top: 2rem;
+    padding-bottom: 3.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.leader-image img {
+    border-radius: 30px;
+}
+
+.leadership-advance-body {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.leadership-advance-article {
+    max-width: 1200px;
+    padding: 0 2rem;
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+.leadership-advance-article p {
+    margin-bottom: 1.5rem;
+}
+
+.leadership-advance-article h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+
+@media screen and (min-width:700px) {
+    .leader-head {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1200px;
+        align-items: center;
+    }
+
+    .leader-text {
+        margin: 0 auto;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .leader-text h2 {
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-width:1040px) {
+    .leader-head {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1400px;
+        align-items: center;
+        column-gap: 3rem;
+    }
+
+    .leader-image {
+        margin: 0 auto;
+
+    }
+
+    .leader-image img {
+        border-radius: 30px;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .leader-text h2 {
+        font-size: 3.2rem;
+        font-weight: 500;
+    }
+
+    .go-front {
+        display: flex;
+        justify-content: center;
+    }
+
+    .front-link {
+        max-width: 1200px;
+        padding: 0 2rem;
+    }
+}
