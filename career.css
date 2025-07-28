@@ -1,0 +1,116 @@
+.career-hero {
+    padding: 7rem 0;
+    background-image: url(images/career.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+    position: relative;
+}
+
+.career-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(24, 25, 26, 0.75);
+}
+
+.career-content {
+    position: relative;
+    padding: 2rem 1rem;
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.career-content h2 {
+    font-size: 2.5rem;
+    font-family: "Caprasimo", serif;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.career-content p {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.career-content button {
+    margin-top: 0.7rem;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border: 2px solid var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.career-content button:hover {
+    background: var(--primary-color);
+    color: #000;
+    box-shadow: 0 4px 16px rgba(86, 85, 84, 0.12);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.search {
+    padding-top: 2rem;
+}
+
+.search-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-content h2 {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+}
+
+.search-content input {
+    width: 100%;
+    max-width: 1400px;
+    padding: 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    border-radius: 30px;
+}
+
+.search-content input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.search-content input::placeholder {
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+@media screen and (min-width:600px) {
+    .career-content {
+        max-width: 600px;
+        height: 100%;
+    }
+
+    .career-hero {
+        height: 100vh;
+    }
+
+    .search-content h2 {
+        font-size: 2.8rem;
+        padding-bottom: 1rem;
+    }
+
+    .search-content input::placeholder {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
+}
