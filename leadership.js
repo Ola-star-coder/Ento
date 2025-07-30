@@ -4,18 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   tabButtons.forEach(button => {
     button.addEventListener('click', () => {
-      // Remove 'active' class from all buttons and panes
       tabButtons.forEach(btn => btn.classList.remove('active'));
       tabPanes.forEach(pane => pane.classList.remove('active'));
-
-      // Add 'active' class to the clicked button
       button.classList.add('active');
-
-      // Get the target tab pane ID from the data-tab attribute
       const targetTabId = button.dataset.tab;
       const targetTabPane = document.getElementById(targetTabId);
-
-      // Add 'active' class to the corresponding tab pane
       if (targetTabPane) {
         targetTabPane.classList.add('active');
       }
