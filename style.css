@@ -550,7 +550,7 @@ body.dark-mode .slide.active {
 
 .research-engineers {
     padding: 1rem 0;
-    background-image: url(images/research-eng.png);
+    background-image: url(image/research.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1727,5 +1727,18 @@ body.dark-mode .slide.active {
 
     .leadership-text button {
         margin-top: 2rem;
+    }
+
+    .research-engineers {
+        padding: 1rem 0;
+        background-image: url(image/research-desktop.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        backdrop-filter: blur(4px);
+        position: relative;
+        z-index: 1;
     }
 }
