@@ -94,6 +94,73 @@
     letter-spacing: 2px;
 }
 
+.Feature-Team {
+    padding-top: 3rem;
+}
+
+.feature-Team-head {
+    text-align: center;
+    padding: 1rem;
+}
+
+.feature-Team-head h3 {
+    font-size: 0.9rem;
+}
+
+.feature-Team-head h2 {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.feature-Team-head p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.feature-team-container {
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.feature-team-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 2rem;
+}
+
+.feature-team-box img {
+    border-radius: 30px;
+}
+
+.feature-team-text {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.feature-team-text h3 {
+    font-size: 1rem;
+}
+
+.feature-team-text h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+}
+
+.feature-team-text p {
+    text-align: left;
+}
+
+.feature-team-text button {
+    margin-top: 0.7rem;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    background: none;
+    color: var(--text-color);
+    font-size: 19px;
+}
 
 @media screen and (min-width:600px) {
     .career-content {
@@ -113,5 +180,24 @@
     .search-content input::placeholder {
         font-size: 1.3rem;
         letter-spacing: 2px;
+    }
+
+    .feature-Team-head h2 {
+        padding-bottom: 1rem;
+        font-size: 3.4rem;
+    }
+
+    .Feature-Team {
+        padding-top: 7rem;
+    }
+}
+
+@media screen and (min-width:1030px) {
+    .feature-team-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        max-width: 1420px;
+        margin: 0 auto;
     }
 }
