@@ -209,6 +209,7 @@
 
 .career-event {
     padding-top: 4rem;
+    padding-bottom: 3rem;
 }
 
 .career-event-head {
@@ -246,6 +247,17 @@
     width: 100%;
     width: 350px;
     border-radius: 20px;
+}
+
+.event-text button {
+    margin-top: 0.7rem;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    background: none;
+    color: var(--text-color);
+    font-size: 19px;
 }
 
 @media screen and (min-width:600px) {
