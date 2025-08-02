@@ -214,6 +214,38 @@
 .career-event-head {
     text-align: center;
     padding: 0rem 0.6rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.career-event-head h2 {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.career-event-head p {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.career-event-container {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.event-card {
+    padding-top: 1rem;
+}
+
+.event-card img {
+    width: 100%;
+    width: 350px;
+    border-radius: 20px;
 }
 
 @media screen and (min-width:600px) {
@@ -264,6 +296,12 @@
         font-weight: 600;
         padding-bottom: 0.5rem;
     }
+
+    .event-card img {
+        width: 100%;
+        width: 400px;
+        border-radius: 20px;
+    }
 }
 
 @media screen and (min-width:1030px) {
@@ -297,5 +335,11 @@
 
     .career-video-content p {
         font-size: 1.1rem;
+    }
+
+    .event-card img {
+        width: 100%;
+        width: 450px;
+        border-radius: 20px;
     }
 }
