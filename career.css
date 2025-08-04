@@ -260,6 +260,50 @@
     font-size: 19px;
 }
 
+.career-future {
+    background-image: url(image/vr-career.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 1rem 0;
+}
+
+.career-future::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(24, 25, 26, 0.75);
+}
+
+.future-career {
+    position: relative;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: var(--primary-color);
+}
+
+.future-career h2 {
+    font-size: 1.9rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    max-width: 600px;
+}
+
+.future-career p {
+    font-size: 1rem;
+    text-align: center;
+    max-width: 500px;
+}
+
 @media screen and (min-width:600px) {
     .career-content {
         max-width: 600px;
@@ -313,6 +357,26 @@
         width: 100%;
         width: 400px;
         border-radius: 20px;
+    }
+
+    .career-future {
+        background-image: url(image/vr-career-desktop.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        backdrop-filter: blur(2px);
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        padding: 1rem 0;
+    }
+
+    .future-career h2 {
+        font-size: 3.2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        max-width: 600px;
     }
 }
 
