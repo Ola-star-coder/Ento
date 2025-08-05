@@ -346,6 +346,47 @@
     font-size: 19px;
 }
 
+.career-testimonial {
+    padding-top: 2rem;
+}
+
+.career-testimonial-team {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.career-testimonial-team img {
+    border-radius: 30px;
+}
+
+.career-testimonial-text {
+    padding-top: 1rem;
+}
+
+.career-testimonial-text h2 {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.career-testimonial-text p {
+    font-size: 1.3rem;
+    padding-bottom: 0.5rem;
+}
+
+.career-testimonial-team button {
+    margin-top: 0.7rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    background: var(--text-color);
+    color: var(--background-color);
+    font-size: 19px;
+}
 
 
 @media screen and (min-width:600px) {
@@ -463,10 +504,6 @@
         border-radius: 20px;
     }
 
-    .culture {
-        padding-top: 2rem;
-    }
-
     .culture-team {
         padding: 1rem;
         display: flex;
@@ -502,6 +539,38 @@
     .culture-text p {
         font-size: 1rem;
         padding-bottom: 0.5rem;
+        max-width: 400px;
+    }
+
+    .career-testimonial-team {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        max-width: 1350px;
+        margin: 0 auto;
+    }
+
+    .career-testimonial-text {
+        padding-top: 1rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 600px;
+    }
+
+    .career-testimonial-text button {
+        width: auto;
+        align-self: flex-start;
+    }
+
+    .career-testimonial-text h2 {
+        font-size: 2.5rem;
+        max-width: 600px;
+    }
+
+    .career-testimonial-text p {
         max-width: 400px;
     }
 }
