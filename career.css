@@ -261,7 +261,7 @@
 }
 
 .career-future {
-    background-image: url(image/vr-career.jpg);
+    background-image: url(image/current.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -360,7 +360,7 @@
     }
 
     .career-future {
-        background-image: url(image/vr-career-desktop.png);
+        background-image: url(image/Vr-desktop.webp);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
