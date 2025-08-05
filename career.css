@@ -409,6 +409,55 @@
     font-size: 19px;
 }
 
+.career-featured-jobs {
+    padding: 2rem 1rem;
+    background: var(--header-bg-scrolled);
+}
+
+.text-footers {
+    padding: 1rem;
+    max-width: 1500px;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.bord {
+    padding-top: 1rem;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.career-featured-head {
+    padding: 1rem;
+    padding-top: 4rem;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+
+.career-featured-head h3 {
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.career-featured-head h2 {
+    text-align: left;
+}
+
+.career-featured-head p {
+    max-width: 600px;
+    text-align: left;
+}
+
+.career-featured-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
 
 @media screen and (min-width:600px) {
     .career-content {
