@@ -18,6 +18,14 @@
     align-items: flex-start;
 }
 
+.career-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(24, 25, 26, 0.75);
+    pointer-events: none;
+}
+
 .career-content h2 {
     font-size: 2.5rem;
     font-family: "Caprasimo", serif;
