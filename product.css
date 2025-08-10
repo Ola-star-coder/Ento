@@ -147,7 +147,7 @@
 }
 
 .product-list-box i {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
 
 @media screen and (min-width:600px) {
@@ -170,5 +170,20 @@
         padding-bottom: 1rem;
         margin: 0 auto;
         max-width: 600px;
+    }
+
+    .product-list-container {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .product-list-container {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+        margin: 0 auto;
     }
 }
