@@ -62,7 +62,7 @@ let pauseTime = 2500;
 function typeText(){
     const currentText = texts[textIndex];
     if(isDeleting){
-        textSpan.textContent = currentText.substring(0, charIndex--);
+        textSpan.innerText = currentText.substring(0, charIndex--);
         if(charIndex < 0){
             isDeleting = false;
             textIndex = (textIndex + 1) % texts.length; 
@@ -71,7 +71,7 @@ function typeText(){
             setTimeout(typeText, typingSpeed / 1);
         }
          }else{
-         textSpan.textContent = currentText.substring(0, charIndex++);
+         textSpan.innerText = currentText.substring(0, charIndex++);
          if(charIndex > currentText.length){
             isDeleting = true
             setTimeout(typeText, pauseTime);
@@ -79,7 +79,7 @@ function typeText(){
             setTimeout(typeText, typingSpeed)
          }
          }
-    }
+}
 
 if(textSpan) typeText();
 
@@ -153,7 +153,7 @@ const videoToggle = document.getElementById('videoToggler');
 
 if (firstVideo && videoToggle) {
     function newButton(){
-        videoToggle.textContent = firstVideo.paused ? '▶' : '⏸';
+        videoToggle.innerText = firstVideo.paused ? '▶' : '⏸';
         videoToggle.setAttribute('aria-label', firstVideo.paused ? 'Play video' : 'Paused video');
     }
 
@@ -177,7 +177,7 @@ const toggleVid = document.getElementById('videoToggle');
 
 if (video && toggleVid) {
     function updateButton(){
-        toggleVid.textContent = video.paused ? '▶' : '⏸';
+        toggleVid.innerText = video.paused ? '▶' : '⏸';
         toggleVid.setAttribute('aria-label', video.paused ? 'Play video' : 'Paused video');
     }
 
@@ -196,11 +196,10 @@ if (video && toggleVid) {
 }
 
 //Footer DropDowns
-document.querySelectorAll('.footer-section').forEach((section, idx) => {
+document.querySelectorAll('.footer-section').forEach((section, num) => {
     const btn = section.querySelector('.footer-box-toggle');
     const list = section.querySelector('.footer-box-list');
-    // Open first section by default
-    if (idx === 0) {
+    if (num === 0) {
         section.classList.add('open');
         btn.setAttribute('aria-expanded', 'true');
         list.style.maxHeight = list.scrollHeight + "px";
