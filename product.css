@@ -327,4 +327,12 @@
         border-radius: 50px;
         aspect-ratio: 24/17;
     }
+
+    .cortex-video img {
+        border-radius: 40px;
+        width: 100%;
+        height: 100%;
+        display: block;
+
+    }
 }
