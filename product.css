@@ -251,6 +251,67 @@
     transition: 0.3s;
 }
 
+.dive-in {
+    padding-top: 3rem;
+}
+
+.dive-container {
+    padding: 1rem;
+}
+
+.dive-box img {
+    border-radius: 30px;
+}
+
+.dive-box .dive-text {
+    padding-top: 1rem;
+}
+
+.dive-text h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.dive-text p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.dive-text button {
+    margin-top: 0.8rem;
+    margin-bottom: 2.5rem;
+    padding: 14px 18px;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: var(--secondary-color);
+    color: var(--background-color);
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.dive-text button:hover {
+    background: var(--text-color);
+    color: var(--background-color);
+}
+
+/* .dive-text .button-2 {
+    margin-top: 0.7rem;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border: 2px solid var(--primary-color);
+    background: transparent;
+    color: var(--text-color);
+    border-radius: 8px;
+    transition: 0.3s ease;
+} */
+
 @media screen and (min-width:600px) {
     .product-hero-content {
         position: relative;
@@ -300,6 +361,11 @@
     .cortex-text h2 {
         font-size: 2.5rem;
     }
+
+    .dive-box {
+        max-width: 600px;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (min-width:900px) {
@@ -333,6 +399,35 @@
         width: 100%;
         height: 100%;
         display: block;
+        margin-top: 2.7rem;
+    }
 
+    .dive-box {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        max-width: 1250px;
+        margin: 0 auto;
+    }
+
+    .dive-text {
+        padding-top: 1rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 900px;
+    }
+
+    .dive-text h2 {
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+
+    .dive-text p {
+        font-size: 1rem;
+        font-weight: 400;
+        max-width: 400px;
     }
 }
