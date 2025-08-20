@@ -1,16 +1,22 @@
 .aura-hero {
     padding-top: 5rem;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .aura-hero-slider {
     height: 100vh;
+    position: relative;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    scrollbar-width: none;
+    transition: transform 1s ease;
 }
 
 .aura-hero-box {
     position: relative;
     height: 100vh;
+    width: 100%;
     scroll-snap-align: start;
 }
 
@@ -33,6 +39,14 @@
     color: #fff;
     top: 40%;
     transform: translateY(-40%);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+}
+
+.aura-content.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .aura-content h1 {
