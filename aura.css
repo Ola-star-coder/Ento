@@ -8,7 +8,8 @@
     height: 100vh;
     position: relative;
     scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
+    overflow: hidden;
     scrollbar-width: none;
     transition: transform 1s ease;
 }
@@ -38,7 +39,7 @@
     z-index: 1;
     color: #fff;
     top: 30%;
-    transform: translateY(-40%);
+    /* transform: translateY(-40%); */
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.8s ease;

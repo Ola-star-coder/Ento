@@ -32,7 +32,7 @@ const observer = new IntersectionObserver((entries) =>{
 auraVideos.forEach(video => observer.observe(video));
 
 function goToHero(index){
-    if(index < 0 || auraHeroBoxes.length) return;
+   if (index < 0 || index >= auraHeroBoxes.length) return;
 
     isScrolling = true;
     currentHero = index;
@@ -54,8 +54,8 @@ if(e.deltaY > 0){
 window.addEventListener('keydown', (e) => {
   if (isScrolling) return;
 
-  if (e.key === 'ArrowDown') goToSection(currentSection + 1);
-  if (e.key === 'ArrowUp') goToSection(currentSection - 1);
+  if (e.key === 'ArrowDown') goToHero(currentHero + 1);
+  if (e.key === 'ArrowUp') goToHero(currentHero - 1);
 });
 
 // Touch swipes
