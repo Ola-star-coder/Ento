@@ -8,10 +8,10 @@
     height: 100vh;
     position: relative;
     scroll-snap-type: y mandatory;
-    /* overflow-y: scroll; */
-    overflow: hidden;
+    overflow-y: scroll;
     scrollbar-width: none;
     transition: transform 1s ease;
+
 }
 
 .aura-hero-box {
@@ -39,7 +39,6 @@
     z-index: 1;
     color: #fff;
     top: 30%;
-    /* transform: translateY(-40%); */
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.8s ease;
