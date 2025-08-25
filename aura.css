@@ -91,7 +91,7 @@
     background-size: cover;
     backdrop-filter: blur(1px);
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 .aura-chip::before {
@@ -148,5 +148,10 @@
     .aura-content p {
         max-width: 600px;
         margin: 0 auto;
+    }
+
+    .aura-chip {
+        width: 100%;
+        height: 100vh;
     }
 }
