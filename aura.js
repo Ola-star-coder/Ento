@@ -1,8 +1,22 @@
 const auraVideos = document.querySelectorAll('.aura-video');
 const auraContents = document.querySelectorAll('.aura-content');
 const auraHeroBoxes = document.querySelectorAll('.aura-hero-box');
+const auraToolsContent = document.querySelectorAll('.aura-tool-box-content');
 let currentHero = 0;
 let isScrolling = false;
+
+
+const ToolsObserver = new IntersectionObserver((entries) =>{
+ entries.forEach(entry =>{
+    const tool = entry.target;
+    if(entry.isIntersecting){
+        entry.target.classList.add('showed');
+    } else{
+        entry.target.classList.remove('showed');
+    }
+ }), {threshold:0.9}});
+
+ auraToolsContent.forEach(tool => ToolsObserver.observe(tool));
 
 const contentObserver = new IntersectionObserver((entries) =>{
     entries.forEach(entry =>{
