@@ -83,6 +83,63 @@
     transition: 0.3s ease;
 }
 
+.aura-chip {
+    padding: 1rem 0;
+    background-image: url(image/chip.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(1px);
+    width: 100%;
+    height: 100vh;
+}
+
+.aura-chip::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(24, 25, 26, 0.75);
+    pointer-events: none;
+}
+
+.aura-chip-container {
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.aura-chip-container h1 {
+    font-size: 6rem;
+    padding-bottom: 1rem;
+    text-shadow:
+        0 0 24px #fff7e6,
+        0 0 48px #ffb86b,
+        0 2px 12px #ff7e5f,
+        0 0 8px #ffd8a8,
+        0 0 2px #ffb86b;
+}
+
+.aura-chip-container h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 8px #000, 0 0 2px #000;
+}
+
+.aura-chip-container p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
 @media screen and (min-width:600px) {
     .aura-content h1 {
         font-size: 5rem;
