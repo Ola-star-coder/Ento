@@ -119,12 +119,7 @@
 .aura-chip-container h1 {
     font-size: 6rem;
     padding-bottom: 1rem;
-    text-shadow:
-        0 0 24px #fff7e6,
-        0 0 48px #ffb86b,
-        0 2px 12px #ff7e5f,
-        0 0 8px #ffd8a8,
-        0 0 2px #ffb86b;
+    text-shadow: 0 0 24px #fff7e6, 0 0 48px #ffb86b, 0 2px 12px #ff7e5f, 0 0 8px #ffd8a8, 0 0 2px #ffb86b;
 }
 
 .aura-chip-container h2 {
