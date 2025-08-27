@@ -1,3 +1,7 @@
+body {
+    scroll-behavior: smooth;
+}
+
 .aura-hero {
     padding-top: 5rem;
     height: 100vh;
@@ -171,6 +175,19 @@
 }
 
 .aura-tools-box video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    border-radius: 40px;
+    padding: 0.4rem;
+    filter: brightness(0.7);
+}
+
+.aura-tools-box img {
     position: absolute;
     top: 0;
     left: 0;
