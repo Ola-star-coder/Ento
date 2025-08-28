@@ -218,6 +218,14 @@ body {
     transform: translateX(0);
 }
 
+.aura-access {
+    display: none;
+}
+
+.aura-accessed {
+    display: block;
+}
+
 @media screen and (min-width:600px) {
     .aura-content h1 {
         font-size: 5rem;
@@ -231,6 +239,15 @@ body {
     .aura-chip {
         width: 100%;
         height: 100vh;
+    }
+
+    .aura-tools-head h2 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .aura-tool-box-content h3 {
+        font-size: 1.9rem;
     }
 
 }
@@ -250,5 +267,13 @@ body {
     .aura-tools-head h2 {
         font-size: 2.5rem;
         font-weight: 500;
+    }
+
+    .aura-access {
+        display: block;
+    }
+
+    .aura-accessed {
+        display: none;
     }
 }
