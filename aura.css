@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 body {
     scroll-behavior: smooth;
 }
 
-=======
->>>>>>> 5228275ab15d1e2dfdf951e7d928856ace93964c
 .aura-hero {
     padding-top: 5rem;
     height: 100vh;
@@ -190,22 +187,6 @@ body {
     filter: brightness(0.7);
 }
 
-<<<<<<< HEAD
-.aura-tools-box img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-    border-radius: 40px;
-    padding: 0.4rem;
-    filter: brightness(0.7);
-}
-
-=======
->>>>>>> 5228275ab15d1e2dfdf951e7d928856ace93964c
 .aura-tool-box-content {
     position: relative;
     z-index: 2;
