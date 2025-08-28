@@ -250,6 +250,10 @@ body {
         font-size: 1.9rem;
     }
 
+    .aura-chip {
+        background-image: url(image/circuit.png);
+    }
+
 }
 
 @media screen and (min-width:900px) {
