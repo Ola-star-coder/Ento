@@ -1,14 +1,26 @@
 const auraVideos = document.querySelectorAll('.aura-video');
 const auraContents = document.querySelectorAll('.aura-content');
-const auraHeroBoxes = document.querySelectorAll('.aura-hero-box');
+const auraToolVideos = document.querySelectorAll('.aura-tool-vid');
 const auraToolsContent = document.querySelectorAll('.aura-tool-box-content');
-let currentHero = 0;
-let isScrolling = false;
 
+// the get most out.... video handler
+const VideoObserver = new IntersectionObserver((entries) =>{
+    entries.forEach(entry =>{
+        const video = entry.target;
 
+        if(entry.isIntersecting){
+            video.play()
+        }else{
+            video.pause()
+        }
+    });
+}, {threshold: 0.9});
+
+auraToolVideos.forEach(video => VideoObserver.observe(video));
+
+// Yeah same same the content for that section
 const ToolsObserver = new IntersectionObserver((entries) =>{
  entries.forEach(entry =>{
-    const tool = entry.target;
     if(entry.isIntersecting){
         entry.target.classList.add('showed');
     } else{
@@ -18,9 +30,9 @@ const ToolsObserver = new IntersectionObserver((entries) =>{
 
  auraToolsContent.forEach(tool => ToolsObserver.observe(tool));
 
+// This is for main aura content
 const contentObserver = new IntersectionObserver((entries) =>{
     entries.forEach(entry =>{
-        const content = entry.target;
         if(entry.isIntersecting){
             entry.target.classList.add('show');
         } else{
@@ -31,6 +43,7 @@ const contentObserver = new IntersectionObserver((entries) =>{
 
 auraContents.forEach(content => contentObserver.observe(content));
 
+// This is for main aura videos
 const observer = new IntersectionObserver((entries) =>{
     entries.forEach(entry =>{
         const video = entry.target;
