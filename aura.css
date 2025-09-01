@@ -141,6 +141,7 @@ body {
 
 .aura-tools {
     padding-top: 4rem;
+    padding-bottom: 2rem;
 }
 
 .aura-tools-head {
@@ -226,6 +227,58 @@ body {
     display: block;
 }
 
+.aura-hi {
+    background: var(--header-bg-scrolled);
+    padding-top: 3rem;
+}
+
+.aura-hi-head {
+    text-align: center;
+}
+
+.aura-hi-head video {
+    width: 100px;
+}
+
+.aura-hi-content {
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.aura-hi-content h3 {
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.aura-hi-content h2 {
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+strong {
+    background: linear-gradient(89.5deg, #3186ff 28%, #346bf0 44.5%, #4eaff0 99.5%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    letter-spacing: 1px;
+    font-weight: inherit;
+}
+
+.aura-hi-content button {
+    margin-top: 0.8rem;
+    margin-bottom: 2.5rem;
+    padding: 14px 18px;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: linear-gradient(89.5deg, #3186ff 28%, #346bf0 44.5%, #4eaff0 99.5%);
+    color: var(--background-color);
+    border-radius: 30px;
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
+
 @media screen and (min-width:600px) {
     .aura-content h1 {
         font-size: 5rem;
@@ -254,6 +307,11 @@ body {
         background-image: url(image/circuit.png);
     }
 
+    .aura-hi-content h2 {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
 }
 
 @media screen and (min-width:900px) {
@@ -279,5 +337,13 @@ body {
 
     .aura-accessed {
         display: none;
+    }
+
+    .aura-hi-content h2 {
+        font-weight: 500;
+        font-size: 5rem;
+        padding: 1rem;
+        max-width: 1000px;
+        margin: 0 auto;
     }
 }

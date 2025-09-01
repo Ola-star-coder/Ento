@@ -14,7 +14,7 @@ const VideoObserver = new IntersectionObserver((entries) =>{
             video.pause()
         }
     });
-}, {threshold: 0.9});
+}, {threshold: 0.6});
 
 auraToolVideos.forEach(video => VideoObserver.observe(video));
 
@@ -26,7 +26,7 @@ const ToolsObserver = new IntersectionObserver((entries) =>{
     } else{
         entry.target.classList.remove('showed');
     }
- }), {threshold:0.9}});
+ }), {threshold:0.6}});
 
  auraToolsContent.forEach(tool => ToolsObserver.observe(tool));
 
