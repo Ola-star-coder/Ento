@@ -280,10 +280,10 @@ strong {
 }
 
 .get-aura {
-    padding-top: 1rem;
+    padding-top: 6rem;
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     min-height: 500px;
     overflow: hidden;
     display: flex;
@@ -307,7 +307,7 @@ strong {
     position: relative;
     z-index: 2;
     color: #fff;
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
 }
 
 .get-aura-content h3 {
@@ -329,9 +329,20 @@ strong {
 }
 
 .get-aura-content img {
-    padding-top: 1rem;
+    padding-top: 2rem;
     width: 150px;
+    cursor: pointer;
 }
+
+.cortex-img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/12;
+    border-radius: 40px;
+    object-fit: cover;
+    display: block;
+}
+
 
 @media screen and (min-width:600px) {
     .aura-content h1 {
