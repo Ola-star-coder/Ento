@@ -301,6 +301,19 @@ strong {
     object-fit: cover;
     z-index: 1;
     filter: brightness(0.9);
+    display: none;
+}
+
+.alive-video-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    filter: brightness(0.9);
+    display: block;
 }
 
 .get-aura-content {
@@ -343,6 +356,20 @@ strong {
     display: block;
 }
 
+.get-aura-content button {
+    margin-top: 0.8rem;
+    margin-bottom: 2.5rem;
+    padding: 14px 18px;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: linear-gradient(89.5deg, #3186ff 28%, #346bf0 44.5%, #4eaff0 99.5%);
+    color: var(--background-color);
+    border-radius: 30px;
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
 
 @media screen and (min-width:600px) {
     .aura-content h1 {
@@ -383,6 +410,14 @@ strong {
         font-weight: 500;
         max-width: 600px;
     }
+
+    .alive-video {
+        display: block;
+    }
+
+    .alive-video-mobile {
+        display: none;
+    }
 }
 
 @media screen and (min-width:900px) {
@@ -418,18 +453,6 @@ strong {
         margin: 0 auto;
     }
 
-    .get-aura-content h2 {
-        font-size: 3rem;
-        padding-bottom: 1rem;
-        font-weight: 500;
-    }
-
-    .get-aura-content p {
-        font-size: 1.1rem;
-        line-height: 30px;
-        padding-right: 4rem;
-    }
-
     .get-aura-content {
         position: relative;
         z-index: 2;
@@ -443,6 +466,6 @@ strong {
         font-size: 1.1rem;
         line-height: 30px;
         padding-right: 4rem;
-        max-width: 800px;
+        max-width: 620px;
     }
 }
