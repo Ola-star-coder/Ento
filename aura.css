@@ -394,18 +394,18 @@ strong {
 }
 
 .aura-plans-container {
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .aura-plans-box {
     border: 1px solid var(--text-color);
     border-radius: 40px;
     margin: 1rem 0.4rem;
-    padding: 1rem 1rem;
+    padding: 2rem 1rem;
 }
 
 .aura-box-plan-head h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
     padding-bottom: 1rem;
 }
@@ -457,12 +457,62 @@ strong {
 }
 
 .plan-bord {
-    border-top: 1px solid var(--primary-color);
-    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--primary-color);
+    padding-bottom: 1rem;
     width: 100%;
     margin: 0 auto;
-    margin-top: 4rem;
 }
+
+.aura-plans-box h3 {
+    margin-top: 1rem;
+}
+
+.material-symbols-outlined {
+    background: linear-gradient(89.5deg, #3186ff 28%, #346bf0 44.5%, #4eaff0 99.5%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    letter-spacing: 1px;
+    font-weight: inherit;
+    padding-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.unit-love {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.unit-love img {
+    width: 25px;
+    justify-content: flex-start;
+}
+
+.unit-love h2 {
+    font-size: 1.2rem;
+}
+
+.unit-description {
+    font-size: 1rem;
+}
+
+.box-features-text {
+    padding-top: 1rem;
+    ;
+}
+
+.box-features-text i {
+    color: var(--text-color);
+    padding-right: 0.5rem;
+}
+
+.box-features-text p {
+    padding: 0.4rem 0;
+    font-size: 1rem;
+}
+
 
 @media screen and (min-width:600px) {
     .aura-content h1 {
