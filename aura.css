@@ -482,12 +482,12 @@ strong {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding-top: 1rem;
+    padding: 1.5rem 0.5rem;
 }
 
 .unit-love img {
-    width: 25px;
-    justify-content: flex-start;
+    width: 30px;
+    height: 30px;
 }
 
 .unit-love h2 {
@@ -499,8 +499,7 @@ strong {
 }
 
 .box-features-text {
-    padding-top: 1rem;
-    ;
+    padding: 1.5rem 0.5rem;
 }
 
 .box-features-text i {
