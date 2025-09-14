@@ -1258,7 +1258,7 @@ body.dark-mode .slide.active {
 
 .footer-box-list li a {
     color: var(--text-color);
-    font-size: 1rem;
+    font-size: 1.1rem;
     opacity: 0.85;
     transition: opacity 0.3s;
     text-decoration: none;
@@ -1342,6 +1342,11 @@ body.dark-mode .slide.active {
     .footer-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer-contain {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .footer-box-toggle i {
