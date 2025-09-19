@@ -666,6 +666,19 @@ strong {
     text-align: center;
 }
 
+.what-icons {
+    display: flex;
+    padding: 1rem 0;
+    gap: 0.7rem;
+}
+
+.what-icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
 @media screen and (min-width:600px) {
     .aura-content h1 {
         font-size: 5rem;
