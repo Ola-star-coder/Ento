@@ -1,0 +1,123 @@
+.hero-cloudnai {
+    padding-top: 7rem;
+    max-width: 700px;
+}
+
+.cloudnai-hero-text {
+    padding: 1rem;
+}
+
+.cloudnai-hero-text h2 {
+    font-size: 2.1rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.cloudnai-hero-text h3 {
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.button-lock {
+    padding-top: 1rem;
+}
+
+.button-lock button {
+    margin: 1em 0.4em;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    background: var(--temp-color);
+    color: #000;
+    transition: 0.3s;
+}
+
+.hero-cloudnai img {
+    padding: 1rem;
+}
+
+.desk-vers {
+    display: none;
+}
+
+.mobile-vers {
+    display: block;
+}
+
+@media screen and (min-width:780px) {
+    .desk-vers {
+        display: block;
+    }
+
+    .mobile-vers {
+        display: none;
+    }
+
+    .hero-cloudnai {
+        padding-top: 7rem;
+        max-width: 1300px;
+        display: flex;
+    }
+
+    .cloudnai-hero-text {
+        width: 60%;
+    }
+
+    .hero-cloud-images {
+        width: 40%;
+    }
+
+    .hero-cloud-images img {
+        padding: 3rem 1rem;
+    }
+
+    .cloudnai-hero-text h2 {
+        font-size: 3rem;
+        font-weight: 500;
+        padding-bottom: 1rem;
+    }
+
+    .cloudnai-hero-text h3 {
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
+}
+
+@media screen and (min-width:1180px) {
+    .hero-cloudnai {
+        padding-top: 5rem;
+        max-width: none;
+        display: flex;
+    }
+
+    .cloudnai-hero-text {
+        padding: 3rem 1rem;
+    }
+
+    .cloudnai-hero-text h2 {
+        font-size: 5.5rem;
+        font-weight: 500;
+        padding-bottom: 1rem;
+    }
+
+    .cloudnai-hero-text h3 {
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
+
+    .hero-cloud-images img {
+        padding: 3rem 2rem;
+        width: 90%;
+    }
+
+    .cloudnai-hero-text {
+        width: 60%;
+    }
+
+    .hero-cloud-images {
+        width: 40%;
+    }
+}
