@@ -1,6 +1,7 @@
 .hero-cloudnai {
     padding-top: 7rem;
     max-width: 700px;
+    background: var(--header-bg-scrolled);
 }
 
 .cloudnai-hero-text {
@@ -47,6 +48,89 @@
     display: block;
 }
 
+/* Platform */
+.hero-cloudnai-platform {
+    padding-top: 3rem;
+}
+
+.hero-cloudnai-plat-head {
+    text-align: center;
+}
+
+.hero-cloudnai-plat-head h3 {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--span-text-color);
+}
+
+.hero-cloudnai-plat-head h1 {
+    padding-top: 1.5rem;
+}
+
+.hero-cloudnai-plat-head h1,
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.hero-cloudnai-plat-head p {
+    padding: 1rem;
+    color: var(--span-text-color);
+}
+
+.hero-cloudnai-plat-container {
+    display: grid;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+.plat-container-box {
+    padding-bottom: 3.3em;
+    max-width: 500px;
+}
+
+.plat-box-img {
+    width: 50px;
+}
+
+.plat-box-text {
+    padding-top: 1rem;
+}
+
+.plat-box-text h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.hero-plat-button-container {
+    text-align: center;
+}
+
+.hero-plat-button-container button {
+    margin: 1em 1em;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    background: var(--temp-color);
+    color: #000;
+    transition: 0.3s;
+}
+
+.find-button {
+    background: transparent;
+    display: block;
+    transition: 0.3s;
+}
+
+.find-button:hover {
+    color: var(--span-text-color);
+    transition: 0.3s;
+}
+
 @media screen and (min-width:780px) {
     .desk-vers {
         display: block;
@@ -84,6 +168,29 @@
         font-size: 1.7rem;
         font-weight: 400;
     }
+
+    .hero-cloudnai-plat-head h1 {
+        padding-top: 1.3rem;
+    }
+
+    .hero-cloudnai-plat-head h1,
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    .hero-cloudnai-plat-container {
+        display: grid;
+        padding: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .find-button {
+        background: transparent;
+        display: inline-block;
+        transition: 0.3s;
+    }
 }
 
 @media screen and (min-width:1180px) {
@@ -119,5 +226,12 @@
 
     .hero-cloud-images {
         width: 40%;
+    }
+
+    .hero-cloudnai-plat-container {
+        display: grid;
+        padding: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
     }
 }
