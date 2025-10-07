@@ -1,0 +1,135 @@
+.nexus-hero {
+    padding-top: 6rem;
+}
+
+.nexus-hero-text {
+    text-align: center;
+    padding: 0.6rem;
+}
+
+.nexus-hero-text h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+}
+
+.nexus-hero-text h1 {
+    font-size: 2.7rem;
+    font-weight: 600;
+    padding-bottom: 1.3rem;
+}
+
+.nexus-hero-text h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.nexus-hero-image img {
+    width: 100%;
+}
+
+
+.video-pulse-cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.video-pulse-cover video {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+    aspect-ratio: 16/11;
+}
+
+/* next section section 3*/
+.nexus-grid {
+    padding-top: 4rem;
+}
+
+.nexus-grid-container {
+    padding: 0.2rem;
+}
+
+.nexus-grid-box {
+    background: var(--header-bg-scrolled);
+    margin-bottom: 1rem;
+}
+
+.nexus-grid-text {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.nexus-grid-text h2 {
+    padding-top: 2rem;
+    font-size: 1.6rem;
+}
+
+.nexus-grid-text p {
+    font-size: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.nexus-grid-box button {
+    margin: 1em 0;
+    padding: 14px 18px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: linear-gradient(89.5deg, #3186ff 28%, #346bf0 44.5%, #4eaff0 99.5%);
+    color: var(--background-color);
+    border-radius: 30px;
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width:600px) {}
+
+@media screen and (min-width:780px) {
+    .nexus-hero-text {
+        text-align: center;
+        padding: 0.6rem;
+        max-width: 970px;
+        margin: 0 auto;
+    }
+
+    .nexus-hero-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .nexus-hero-text h1 {
+        font-size: 5rem;
+    }
+
+    .nexus-hero-text h3 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        max-width: 850px;
+        margin: 0 auto;
+    }
+
+    .video-pulse-cover video {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        display: block;
+        aspect-ratio: 24/17;
+    }
+
+    .nexus-grid-container {
+        padding: 0.2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+}
