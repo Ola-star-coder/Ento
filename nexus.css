@@ -1,5 +1,10 @@
 .nexus-hero {
     padding-top: 6rem;
+    background: var(--header-bg-scrolled);
+}
+
+.nexus-hero2 {
+    background: var(--header-bg-scrolled);
 }
 
 .nexus-hero-text {
@@ -91,7 +96,16 @@
     letter-spacing: 1px;
 }
 
-@media screen and (min-width:600px) {}
+.option {
+    outline: none;
+    padding: 0.5rem;
+    font-size: 20px;
+    background: var(--background-color);
+}
+
+.maybe {
+    font-size: 20px;
+}
 
 @media screen and (min-width:780px) {
     .nexus-hero-text {
