@@ -101,6 +101,7 @@
     padding: 0.5rem;
     font-size: 20px;
     background: var(--background-color);
+    color: var(--text-color);
 }
 
 .maybe {
