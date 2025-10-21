@@ -11,3 +11,9 @@
     transition: 0.3s;
     letter-spacing: 1px;
 }
+
+.header-actions i {
+    font-size: 25px;
+    cursor: pointer;
+    color: #346bf0;
+}
