@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="nexus.css"> -->
     <link rel="stylesheet" href="pulse.css">
+    <link rel="stylesheet" href="aura.css">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,10 +53,20 @@
         <p>Overview</p>
       </div>  
       <div class="pulse-container">
-      <div class="image-slider">
-        <img src="images-2/pulse-2.png" alt="Pulse Wave 1" class="slider-image active">
-        <img src="images-2/realpulse2.png" alt="Pulse Wave 1 Side View" class="slider-image">
-        <img src="images-2/realastpulse2.png" alt="Pulse Wave 1 rear view" class="slider-image">
+    <div class="image-slider main-slider">
+        <img src="images-2/pulse-grey.png" alt="Pulse Wave 1" class="slider-image active" data-color="default">
+        <img src="images-2/pulse-grey-side.png" alt="Pulse Wave 1 Side View" class="slider-image" data-color="default">
+        <img src="images-2/pulse-grey-backside.png" alt="Pulse Wave 1 rear view" class="slider-image" data-color="default">
+    
+        <!-- that milk color images -->
+        <img src="images-2/pulse-milk.png" alt="Milk Pulse Wave 1" class="slider-image" data-color="milk">
+        <img src="images-2/pulse-milk-side.png" alt="Milk Pulse Wave 1 Side" class="slider-image" data-color="milk">
+        <img src="images-2/pulse-milk-backside.png" alt="Milk Pulse Wave 1 Rear" class="slider-image" data-color="milk">
+    
+        <!-- Black images -->
+        <img src="images-2/pulse-2.png" alt="Dark Pulse Wave 1" class="slider-image" data-color="dark">
+        <img src="images-2/realpulse2.png" alt="Dark Pulse Wave 1 Side" class="slider-image" data-color="dark">
+        <img src="images-2/realastpulse2.png" alt="Dark Pulse Wave 1 Rear" class="slider-image" data-color="dark">
     
         <div class="slider-nav">
             <div class="slider-dots">
@@ -64,7 +75,7 @@
                 <span class="dot" data-index="2"></span>
             </div>
         </div>
-       </div>
+    </div>
       <div class="pulse-container-text">
         <div class="colors-pulse-container">
             <div class="color-1"></div>
@@ -84,6 +95,73 @@
 
       </div>
        </div> 
+    </section>
+
+    <section class="next-level-pulse">
+     <div class="next-level-pulse-grid-1">
+      <h3>Next-level health and fitness tools on a bigger, stunning display.</h3>  
+     </div> 
+     <div class="next-level-pulse-grid-2">
+      <p><img src="svgs/watch-pulse.svg" alt=""> Brighter, larger domed display.1</p>  
+        <p><img src="svgs/charged-up.svg" alt=""> Up to 40 hours of battery life.2</p>
+        <p><img src="svgs/fitness.svg" alt="">Personalized fitness insights.</p>
+        <p><img src="svgs/andriod.svg" alt="">Made for Android and iOS.</p>
+        <p><img src="svgs/Aura-ai.svg" alt="">Help from Aura, your AI assistant.3</p>
+     </div>  
+    </section>
+
+    <!-- Get the highlight -->
+    <section class="aura-tools">
+        <div class="aura-tools-head">
+            <h2>Take a closer look</h2>
+        </div>
+        <div class="aura-tools-container">
+            <div class="aura-tools-box">
+                <img src="images-2/highlight-1.jpg" alt="">
+                <div class="aura-tool-box-content">
+                <h3>Finishes. Choose from two aerospace-grade titanium finishes — natural and black.</h3>
+                </div>
+            </div>
+            <div class="aura-tools-box">
+                <video class="aura-tool-vid" src="videos/highlight-2.mp4" autoplay muted
+                    loop playsinline>not available</video>
+                <div class="aura-tool-box-content">
+                    <h3>Hit the ground running with the Action button.</h3>
+                </div>
+            </div>
+            <div class="aura-tools-box">
+                <img src="images-2/highlight-3.jpg" alt="">
+                <div class="aura-tool-box-content">
+                <h3>Display. Wide-angle OLEDs make the display brighter when viewed at an angle.</h3>
+                </div>
+            </div>
+            <div class="aura-tools-box">
+                <img src="images-2/highlight-4.jpg" alt="">
+                <div class="aura-tool-box-content">
+                <h3>Battery. Get a big boost in battery life with up to 42 hours of normal use and up to 72 hours in Low Power Mode.</h3>
+                </div>
+            </div>
+            <div class="aura-tools-box">
+            <img src="images-2/highlight-5.jpg" alt="">
+                <div class="aura-tool-box-content">
+                <h3>Durability.Pulse is built to last with a rugged titanium case and a display crafted from sapphire crystal — one of
+                the strongest naturally occurring materials on Earth.</h3>
+                </div>
+            </div>
+            <div class="aura-tools-box">
+            <img src="images-2/highlight-6.jpg" alt="">
+            <div class="aura-tool-box-content">
+                <h3>Water and dust resistance. Pulse 1 is rated WR100 — fit for recreational scuba diving to 40 meters and high-speed water
+                sports.</h3>
+            </div>
+        </div>
+        <div class="aura-tools-box">
+            <img src="images-2/highlight-7.jpg" alt="">
+            <div class="aura-tool-box-content">
+                <h3>Pulse 1 has four beautiful, endlessly versatile band styles that meet the demands of your daily activities, from
+                workouts to nights out.</h3>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
@@ -168,6 +246,7 @@
 
     <script src="script.js"></script>
     <script src="pulse.js"></script>
+    <script src="aura.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

@@ -23,13 +23,6 @@
     /* background: var(--header-bg); */
 }
 
-/* .pulse-hero-header {
-    position: fixed;
-    background: var(--header-bg);
-    backdrop-filter: blur(6px);
-    width: 100%;
-    padding: 1rem;
-} */
 
 .pulse-hero-header h2 {
     font-weight: 500;
@@ -62,6 +55,7 @@
     max-width: 600px;
     margin: 0 auto;
     padding-top: 1rem;
+    transition: background-color 0.3s ease;
 }
 
 .pulse-container img {
@@ -96,11 +90,13 @@
     display: none;
     width: 100%;
     height: auto;
+    opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
 
 .slider-image.active {
     display: block;
+    opacity: 1;
 }
 
 .slider-nav {
@@ -164,6 +160,7 @@
     border-radius: 50%;
     background: #97b3c0;
     cursor: pointer;
+    transition: border 0.3s ease;
 }
 
 .color-1:hover,
@@ -195,7 +192,51 @@
     display: none;
 }
 
+.next-level-pulse {
+    padding-top: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.next-level-pulse-grid-1 {
+    padding: 0rem 0.5rem;
+}
+
+.next-level-pulse-grid-1 h3 {
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.next-level-pulse-grid-2 {
+    padding: 1rem 0.5rem;
+}
+
+.next-level-pulse-grid-2 p {
+    display: flex;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+.next-level-pulse-grid-2 img {
+    width: 40px;
+    padding-right: 0.5rem;
+}
+
 @media screen and (min-width:1024px) {
+
+    .next-level-pulse {
+        padding-top: 1rem;
+        max-width: 1300px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6rem;
+    }
+
+    .next-level-pulse-grid-1 h3 {
+        font-weight: 500;
+        font-size: 2.6rem;
+    }
+
     .pulse-container {
         display: flex;
         flex-direction: row-reverse;
@@ -207,6 +248,7 @@
         background: var(--header-bg);
         border-radius: 30px;
         margin: 2rem auto;
+        background-color: var(--primary-color);
     }
 
     .pulse-container img {
@@ -265,6 +307,7 @@
         background: #9BB4C0;
         cursor: pointer;
         display: block;
+        transition: border 0.3s ease;
     }
 
     .color-1-desktop:hover,
